@@ -1,0 +1,49 @@
+@import 'var.sass'
+
+.links-section
+    @include setContentWidth
+    padding-bottom: 50px
+    .content
+        .divider
+            display: flex
+            align-items: center
+            .text
+                padding-right: 20px
+                p
+                @include mainFontDisplay
+                text-align: center
+            .hr
+                flex: 1
+                height: 2px
+                background-color: rgba(189, 189, 189, 0.35)
+                margin: auto
+                @media (max-width: 360px)
+                    display: none
+        .links
+            display: grid
+            grid-template-columns: repeat(3, 1fr)
+            @media (max-width: 1186px)
+                grid-template: repeat(3, 40px) / 1fr
+            .link_wrapper
+                display: flex
+                align-items: baseline
+                padding: 0 10px
+                justify-content: center
+                @media (max-width: 1186px)
+                    text-align: left
+                    justify-content: left
+                &:nth-child(1)
+                    justify-self: left
+                &:hover
+                    a
+                        color: $red
+                    svg
+                        fill: $red
+                        stroke: $red
+                a
+                    @include headerFont
+                    color: #4D4D4D
+                svg
+                    padding-left: 6px
+                    width: 7px
+                    fill: #4d4d4d

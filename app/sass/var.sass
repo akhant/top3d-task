@@ -1,0 +1,60 @@
+@font-face
+    font-family: SF Pro Text
+    src: url('../fonts/SFProText.ttf') format('truetype')
+
+@font-face
+    font-family: SF Pro Display
+    src: url('../fonts/SFProDisplay.ttf') format('truetype')
+
+@font-face
+    font-family: Open Sans
+    src: url('../fonts/OpenSans-Regular.ttf') format('truetype')
+
+@mixin headerFont
+    font-family: Open Sans
+    font-style: normal
+    font-weight: 600
+    font-size: 13px
+    line-height: 18px
+
+@mixin mainFont
+    font-family: SF Pro Text
+    font-size: 16px
+    font-style: normal
+    font-weight: 500
+    line-height: 19px
+    letter-spacing: -0.699999988079071px
+
+@mixin mainFontDisplay
+    font-family: SF Pro Display
+    font-size: 27px
+    font-style: normal
+    font-weight: 400
+    line-height: 32px
+    letter-spacing: 0px
+
+@mixin setContentWidth
+    width: 95%
+    margin: 0 auto
+    max-width: 1224px
+    min-width: 320px
+    .content
+        width: 95%
+        margin: 0 auto
+
+@mixin menuItems
+    display: flex
+    justify-content: space-between
+    align-items: center
+    flex: 1
+    &__item
+        a
+            @include headerFont
+            text-decoration: none
+            font-weight: normal
+            color: #000
+            &:focus, &:visited
+                outline: none
+
+$yellow: #FED600
+$red: #D2001C

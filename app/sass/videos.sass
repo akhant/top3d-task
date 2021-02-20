@@ -1,0 +1,51 @@
+@import 'var.sass'
+
+@mixin navBtn
+    border: 1px solid #E5E5E5
+    box-sizing: border-box
+    width: 40px
+    height: 40px
+    display: flex
+    justify-content: center
+    align-items: center
+    cursor: pointer
+    &:hover
+        background-color: darken(#F9F9F9, 20%)
+
+.videos-section
+    @include setContentWidth
+    background: #F9F9F9
+    height: 600px
+    .content
+        padding: 40px 0
+        .head
+            display: flex
+            justify-content: space-between
+            align-items: center
+            .title
+                h2
+                    @include mainFontDisplay
+                    color: #222
+            .nav
+                display: flex
+                .nav__btn_left
+                    @include navBtn
+                .nav__btn_right
+                    @include navBtn
+        .video-list
+            display: flex
+            justify-content: space-between
+            align-items: center
+            padding: 40px 0
+            @media  (max-width: 1200px)
+                flex-direction: column
+
+            .item
+                display: flex
+                justify-content: center
+                @media  (max-width: 1200px)
+                    margin-top: 20px
+                iframe
+                    @media  (max-width: 560px)
+                        width: 300px
+                        height: 200px
