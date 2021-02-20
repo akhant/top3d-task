@@ -2,7 +2,7 @@ header
     .h-contacts
         .content
             .city
-                include ../img/Vector.svg
+                img(alt="img" src="../img/Vector.svg")
                 select.city_select
                     option(value=0) Санкт-Петербург
                     option(value=1) Москва
@@ -17,24 +17,24 @@ header
             .soc
                 .teleg
                     a(href="#")
-                        include ../img/teleg.svg
+                        img(alt="img" src="../img/teleg.svg")
                 .skype
                     a(href="#")
-                        include ../img/skype.svg
+                        img(alt="img" src="../img/skype.svg")
                 .viber
                     a(href="#")
-                        include ../img/viber.svg
+                        img(alt="img" src="../img/viber.svg")
     .h-main
         .content 
             .h-user
                 .mobile-menu
                     .mobile-menu__btn-open.show
-                        include ../img/menu-icon.svg
+                        img(alt="img" src="../img/menu-icon.svg")
                     .mobile-menu__btn-close
-                        include ../img/close-icon.svg
+                        img(alt="img" src="../img/close-icon.svg")
                 .h-user__logo
                     a(href="/")
-                        include ../img/logo.svg
+                        img(alt="img" src="../img/logo.svg")
                 .h-user__label
                     .wrapper
                         p Ваш эксперт
@@ -54,28 +54,28 @@ header
                 .h-user__enter 
                     .wrapper
                         .h-user__enter_icon
-                            include ../img/enter_icon.svg 
-                            include ../img/enter_icon_arrow.svg 
+                            img(alt="img" src="../img/enter_icon.svg") 
+                            img(alt="img" src="../img/enter_icon_arrow.svg") 
                         .h-user__enter_text
                             p Войти
                 .h-user__basket 
                     .wrapper
                         .h-user__basket__icon
-                            include ../img/basket_icon.svg 
-                            include ../img/dot_icon.svg 
-                            include ../img/dot_icon.svg 
+                            img(alt="img" src="../img/basket_icon.svg") 
+                            img(alt="img" src="../img/dot_icon.svg") 
+                            img(alt="img" src="../img/dot_icon.svg") 
                         .h-user__basket__text
                             p Корзина пуста
                 .empty-div
                 .empty-div
                 .mobile-basket
                     a(href='#')
-                        include ../img/shopping-cart.svg
+                        img(alt="img" src="../img/shopping-cart.svg")
                 .mobile-search
                     .mobile-search__btn-open.show
-                        include ../img/search_icon.svg
+                        img(alt="img" src="../img/search_icon.svg")
                     .mobile-search__btn-close
-                        include ../img/close-icon.svg
+                        img(alt="img" src="../img/close-icon.svg")
             .h-menu
                 .h-menu-up
                     each val in ["Aкции", "О нас", "Мероприятия", "Оплата и доставка", "Что с моим заказом?", "Гос. закупки", "Блог", "Мастер-классы", "Контакты"]
@@ -87,7 +87,7 @@ header
                     each val in listMenuBot
                         .h-menu-bot__item
                             .menu_select
-                                include ../img/Vector.svg
+                                img(alt="img" src="../img/Vector.svg")
                                 a(href="#")= val
     .mobile-search-elem
         .wrapper 

@@ -29,7 +29,7 @@ header
         justify-content: start
         align-items: center
         border: 1px solid #eee
-        @media (min-width: 703px)
+        @media (min-width: 904px)
             display: none !important
         .item
             font-size: 16px
@@ -96,7 +96,7 @@ header
             .city
                 grid-column: 1 / span 3
                 position: relative
-                svg
+                img
                     position: absolute
                     z-index: 1
                     right: 5px
@@ -141,7 +141,7 @@ header
                 //     display: none
                 div
                     margin: 0 10px
-                    svg
+                    img
                         width: 16px
                         heigth: 15px
             .dir, .write
@@ -174,8 +174,10 @@ header
                     align-items: center
                 .mobile-menu
                     display: none
-                    @media (max-width: 960px)
+                    @media (max-width: 904px)
                         display: flex
+                    @media (min-width: 904px)
+                        display: none !important
                     &__btn-open
                         cursor: pointer
                         display: none
@@ -183,7 +185,7 @@ header
                         cursor: pointer
                         display: none
                 &__logo
-                    svg
+                    img
                         @media ( max-width: 904px )
                             width: 50px
                 &__label
@@ -270,7 +272,7 @@ header
                         .h-user__enter_icon
                             position: relative
                             width: 20px
-                            svg
+                            img
                                 position: absolute
                                 &:nth-child(1)
                                     top: 50%
@@ -301,7 +303,7 @@ header
                             height: 25px
                             padding: 0 3px
                             basket
-                            svg
+                            img
                                 &:nth-child(1)
                                     position: absolute
                                     top: 50%
@@ -333,14 +335,15 @@ header
                     &__btn-open
                         display: none
                         cursor: pointer
-                        svg
+                        img
                             width: 20px
                             height: 20px
-                            fill: $red
+                            svg
+                                fill: $red
                     &__btn-close
                         cursor: pointer
                         display: none
-                        svg
+                        img
                             width: 15px
                             height: 15px
                             fill: $red
@@ -352,7 +355,7 @@ header
                         right: 34px
                         top: 50%
                         transform: translateY(-50%)
-                    svg
+                    img
                         width: 20px
                         height: 20px
                         fill: $red
@@ -408,7 +411,7 @@ header
                     background: $yellow
                 .menu_select
                     position: relative
-                    svg
+                    img
                         position: absolute
                         top: 6px
                         right: -13px
